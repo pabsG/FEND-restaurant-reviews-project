@@ -1,0 +1,81 @@
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Fixes the padding issue in the filter options class for larger displays. */
+
+@media screen and (min-width: 448px) {
+  nav h1 {
+    padding-top: 20px;
+  }
+  .filter-options {
+    padding-bottom: 0;
+  }
+
+@media screen and (min-width: 680px) {
+  .inside #maincontent {
+    display: inline-block;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .inside header {
+    max-width: 100%;
+  }
+
+  .inside #breadcrumb {
+    max-width: 100%;
+  }
+
+  .inside #restaurant-container {
+    border: 0;
+    order: 0;
+    position: relative;
+    float: left;
+    max-width: 50%;
+    height: 100%;
+  }
+  .inside #restaurant-container #restaurant-name {
+    width: 100vw;
+  }
+  .inside #map-container {
+    order: 1;
+    position: relative;
+    float: right;
+    max-width: 50%;
+    min-height: 100%;
+  }
+
+  .inside #map-container #map {
+    top: 8px;
+    width: 98%;
+  }
+  
+  .inside #reviews-container {
+    border: 0;
+    order: 2;
+    float: left;
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+  }
+
+  .filter-options {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px
+  }
+
+  nav h1 a {
+    font-size: 18pt;
+  }
+
+  .filter-options h2 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .filter-options select {
+    font-size: 13pt;
+  }
+}
