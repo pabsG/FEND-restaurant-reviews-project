@@ -4,7 +4,6 @@
 
 * [Description](#Description)
 * [How To Run](#How-To-Run)
-* [Work Summary](#Work-Summary)
 
 ## Description
 
